@@ -23,8 +23,6 @@ Scripts involved in the subset (*N* = 7) group-level analysis:
 4. subset_step5: estimate autocorrelatioin function
 5. subset_step6: monte carlo simulations
 
-Clustering was then performed in the AFNI GUI
-
 Scripts involved in the whole (*N* = 30) group-level analysis:
 1. group_all_step2: make a composite mask 
 2. group_all_step3: two-way *t* test
@@ -32,12 +30,10 @@ Scripts involved in the whole (*N* = 30) group-level analysis:
 4. group_all_step5: estimate autocorrelation function
 5. group_all_step6: monte carlo simulations
 
-Clustering was then performed in the AFNI GUI
-
-Once cluster tables were generated, MNI coordinates were used to determine the corresponding anatomical location:
+Clustering was performed in the AFNI GUI. Once cluster tables were generated, MNI coordinates were used to determine the corresponding anatomical location:
 mni_coordinates.R
 
-**questions
+## questions
 
 Suggestions, comments, and questions are welcome!
 
