@@ -14,7 +14,25 @@ Scripts involved in single-subjects regression:
 2. single_step2: motion regressors
 3. single_step3: run the regression
 4. figure1: generate an image of the design
+5. group_prep1: blur betas with 8 mm kernel
 
 Scripts involved in the subset (*N* = 7) group-level analysis:
-1. 
+1. subset_step2: make a composite mask 
+2. subset_step3: two-way *t* test
+3. subset_step4: blur residuals 
+4. subset_step5: estimate autocorrelatioin function
+5. subset_step6: monte carlo simulations
+Clustering was then performed in the AFNI GUI
+
+Scripts involved in the whole (*N* = 30) group-level analysis:
+1. group_all_step2: make a composite mask 
+2. group_all_step3: two-way *t* test
+3. group_all_step4: blur residuals 
+4. group_all_step5: estimate autocorrelation function
+5. group_all_step6: monte carlo simulations
+Clustering was then performed in the AFNI GUI
+
+Once cluster tables were generated, MNI coordinates were used to determine the corresponding anatomical location:
+mni_coordinates.R
+
 
